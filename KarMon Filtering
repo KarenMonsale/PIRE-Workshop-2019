@@ -1,0 +1,106 @@
+KarMon June 3,2019 Brown?Trout filtering Bioinformatics Workshop
+
+http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf populations.snps.vcf
+
+After filtering, kept 96 out of 96 Individuals
+After filtering, kept 84363 out of a possible 84363 Sites
+Run Time = 3.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf populations.snps.vcf
+        --missing-indv
+
+After filtering, kept 96 out of 96 Individuals
+Outputting Individual Missingness
+After filtering, kept 84363 out of a possible 84363 Sites
+Run Time = 4.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf populations.snps.vcf
+        --missing-site
+
+After filtering, kept 96 out of 96 Individuals
+Outputting Site Missingness
+After filtering, kept 84363 out of a possible 84363 Sites
+Run Time = 5.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf populations.snps.vcf
+        --remove lowDp2.indv
+        --recode-INFO-all
+        --out BT-low40
+        --recode
+
+Excluding individuals in 'exclude' list
+After filtering, kept 88 out of 96 Individuals
+Outputting VCF file...
+After filtering, kept 84363 out of a possible 84363 Sites
+Run Time = 22.00 seconds
+
+ vcftools --vcf BT-low40.recode.vcf --max-missing 0.80 --recode-INFO-all --out BT-G80low40
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf BT-low40.recode.vcf
+        --recode-INFO-all
+        --max-missing 0.8
+        --out BT-G80low40
+		
+[hpc-0092@coreV4-21-020 ustacks]$ vcftools --vcf BT-low40.recode.vcf --max-missing 0.80 --recode --recode-INFO-all --out BT-G80low40
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf BT-low40.recode.vcf
+        --recode-INFO-all
+        --max-missing 0.8
+        --out BT-G80low40
+        --recode
+
+After filtering, kept 88 out of 88 Individuals
+Outputting VCF file...
+After filtering, kept 12630 out of a possible 20317 Sites
+Run Time = 4.00 seconds
+
+
+load the vcf file to same folder as the r file
+vcftools --vcf BT-G80low40.recode.vcf --mac 3 --recode --recode-INFO-all --out BT-mac3HDG80low40
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf BT-G80low40.recode.vcf
+        --recode-INFO-all
+        --mac 3
+        --out BT-mac3HDG80low40
+        --recode
+
+After filtering, kept 88 out of 88 Individuals
+Outputting VCF file...
+After filtering, kept 10243 out of a possible 12630 Sites
+Run Time = 3.00 seconds
+
+
+
+Run R
+
+if the script is gibberish try to make a new slurm file
