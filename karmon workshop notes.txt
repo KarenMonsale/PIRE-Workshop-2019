@@ -1,0 +1,37 @@
+Open putty
+turing.hpc.odu.edu
+hpc-0092
+HPCsecret2019!
+ssh hpc-0092@turing.odu.edu
+HPCsecret2019!
+bash -l
+/cm/shared/courses/Bioinfo_Workshop/Workspace/KarenMon/BrownTrout-Omics2019/ustacks
+
+https://wirawan0.gitlab.io/pire-shell/
+
+\ -next line
+
+Install cygwin
+
+ustacks-loci
+cstacks- catalog
+sstacks- match individual data
+tvs2bam-converst tsv to bam
+gstacks-call snp's
+populations-
+
+ctrl a-cursor in beginning
+ctrl e- cursor in end
+
+read abt genepop data
+open vcf in excel, then use graphs
+
+formula in excel =B2&"_"&C2
+
+to load a software package enable_lmod
+then module load [software name]
+to edit data in scatter plot, click on non-needed info , then highlight all columns then sort
+======
+PopGEn
+https://github.com/rclark848/PIRE_Bioinformatics
+
